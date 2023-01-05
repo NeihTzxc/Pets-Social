@@ -22,9 +22,8 @@ public class Pets {
     private Float weight;
     private Float height;
     private Float length;
+    public Pets() {
 
-    public Pets(Long id) {
-        this.id = id;
     }
 
     public Pets(Long id, String created_at, String updated_at, Boolean deleted_flg, String name, Date birth_day, String avatar_uri, Integer status, Float weight, Float height, Float length) {
@@ -40,11 +39,6 @@ public class Pets {
         this.height = height;
         this.length = length;
     }
-
-    public Pets() {
-
-    }
-
     public Long getId() {
         return id;
     }
